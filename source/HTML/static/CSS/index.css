@@ -1,0 +1,89 @@
+.background_0{
+    background-image: url("../../static/image/f53561c2b2c9ce55cdc88cb09ce46ee4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+
+
+}
+.background_1{
+    background-image: url("../../static/image/1e6e71c012abdb3fd8248bdd9cc87f2c.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+}
+.background_2{
+    background-image: url("../../static/image/bf44fe3d60b0170d0b59a2a5a1c0b42e.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+}
+
+
+   .background_3{
+       background-image: url("../../static/image/797b100afd7b682b41d90aa54d466dea.jpg");
+       background-repeat: no-repeat;
+       background-size: 100% 100%;
+       filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+   }
+.background_4{
+    background-image: url("../../static/image/44daebad870119f7521ba2ee16822207.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+}
+/*模态框*/
+/*模态框部分 css*/
+.media-body p{
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.modal-footer{
+    border-top: none;
+}
+
+.modal-header{
+    background: #f5f6f8;
+}
+.modal-content{
+    border-radius: 0;
+}
+@font-face {  font-family: 'MyNewFont';   /*字体名称*/  src: url('../../static/fonts/xjlFont.fon')}
+body{
+    font-family: "MyNewFont";
+}
+.list_text{
+    animation:change 5s linear 0s infinite;font-size: 30px;
+}
+.list_text_0{
+    animation:change 5s linear 0s infinite;font-size: 20px;
+}
+@keyframes change{
+    0%   {color: #01ccff;}
+    5%{color: #03d5ff;}
+    10%{color: #04d0ff;}
+    15%{color: #04b0ff;}
+    20%{color: #049eff;}
+    25%{color: #066aff;}
+    30%{color: #015eff;}
+    35%{color: #0844ff;}
+    40%{color: #0322ff;}
+    45%{color: #0825ff;}
+    50% {color: #0608ff;}
+    55% {color: #0608ff;}
+    60%{color: #0825ff;}
+    65%{color: #0322ff;}
+    70%{color: #0844ff;}
+    75%{color: #015eff;}
+    80%{color: #066aff;}
+    85%{color: #049eff;}
+    90%{color: #04b0ff;}
+    95%{color: #04d0ff;}
+    100%{color: #03d5ff;}
+}
+.list_text li:hover{
+    font-size: 35px;
+    color: #c729ea;
+}

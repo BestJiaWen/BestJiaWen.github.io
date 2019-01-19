@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>生日快乐</title>
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>-->
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../static/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/CSS/index.css">
+    <script src="../static/JS/jquery-3.3.1.js"></script>
+    <script src="../static/JS/vue.js"></script>
+    <script src="../static/JS/bootstrap.min.js"></script>
+    <script src="../static/JS/index.js"></script>
+
+</head>
+<body class="background_0" style="min-height: 100vh">
+
+    <audio src="../static/audio/晴愔%20-%20眉间雪%20(纯歌版).mp3" autoplay="autoplay" loop="loop"></audio>
+    <div id="app">
+        <div id="mymodal-01" class="modal fade bs-example-modal-sm">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content" id="modal-content-01">
+                    <div class="modal-header" id="modal-header-01">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h5 class="modal-title">生日快乐阿</h5>
+                    </div>
+                    <div class="media-body" id="media-body-01">
+                        <div style="margin-left: 10px;margin-top: 10px;width: 100%">
+                            <input id="inputHP"  v-model="inputHP" @blur="handleBlur" type="text" style="width: 80%" placeholder="请输入:我保证每天开心">
+                        </div>
+                    </div>
+                    <div class="modal-footer" id="modal-footer-01">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="list-unstyled h3 text-center list_text">
+        </ul>
+    </div>
+    <script>
+        var vm=new Vue({
+            el:"#app",
+            data:{
+                inputHP:'',
+                num_1:0
+            },
+            methods:{
+                handleBlur:function(){
+                    if(this.inputHP===''){
+                        alert('你什么都没有输呀');
+                    }else if(this.inputHP!=='我保证每天开心'){
+                        this.num_1++;
+                        if (this.num_1 === 1) {
+                            alert('小傻瓜 你输错啦');
+                            this.inputHP='';
+                        }
+                        if (this.num_1 === 2) {
+                            alert('小傻瓜 是叫你输入 我保证每天开心 你咋又输错了');
+                            this.inputHP='';
+                        }
+                        if (this.num_1 === 3) {
+                            alert("你是大傻子吗?这么简单的东西你输错3次?");
+                            this.inputHP='';
+                        }
+                        if (this.num_1 === 4) {
+                            alert("第4次 等我有钱了一定带你去最好的脑科医院看看");
+                            this.inputHP='';
+                        }
+                        if (this.num_1 === 5) {
+                            alert("第5次了!!! 你能睁着眼睛打字吗?");
+                            this.inputHP='';
+                        }
+                        if (this.num_1 === 6) {
+                            alert("第6次了!!!!!! 您可拉倒吧");
+                            this.inputHP='';
+                        }
+                        if (this.num_1 === 7) {
+                            alert("行了,行了 你这个智商也是没办法了");
+                            this.inputHP='';
+                        }
+                        if (this.num_1 === 8) {
+                            alert("怕了您了,让您进去啦");
+                            this.jump();
+                        }
+                    }else if(this.inputHP==='我保证每天开心'){
+                        this.jump();
+                    }
+                },
+                jump:function(){
+                    window.location.href='main.html'
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+.time{
+    text-align:center;
+
+}
+.background_0{
+    background-image: url("../image/zzpic7615.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 130%;
+    filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+}
+@font-face {  font-family: 'MyNewFont';   /*字体名称*/  src: url('../../static/fonts/xjlFont.fon')}
+body{
+    font-family: "MyNewFont";
+    min-height:100%
+}
+html{height:100%}
+.list_text_0{
+    animation:change 5s linear 0s infinite;
+}
+@keyframes change{
+    0%   {color: #8a00ff;}
+    5%{color: #7b00ff;}
+    10%{color: #a704ff;}
+    15%{color: #d100ff;}
+    20%{color: #f300ff;}
+    25%{color: #d907ff;}
+    30%{color: #b900ff;}
+    35%{color: #8d00ff;}
+    40%{color: #0322ff;}
+    45%{color: #4400ff;}
+    50% {color: #0608ff;}
+    55% {color: #4d00ff;}
+    60%{color: #6f00ff;}
+    65%{color: #9300ff;}
+    70%{color: #aa00ff;}
+    75%{color: #c500ff;}
+    80%{color: #066aff;}
+    85%{color: #049eff;}
+    90%{color: #04b0ff;}
+    95%{color: #04d0ff;}
+    100%{color: #03d5ff;}
+}
+.cong{
+
+    background-image: url("../image/04660EA3-1235-4689-BFFD-D623AECCCACC.JPG");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#ul_idv:hover{
+
+    background: none;
+}
+.tem{
+    animation:changes 5s linear 0s infinite;
+}
+@keyframes changes{
+    0%   {color: #01ccff;}
+    5%{color: #03d5ff;}
+    10%{color: #04d0ff;}
+    15%{color: #04b0ff;}
+    20%{color: #049eff;}
+    25%{color: #066aff;}
+    30%{color: #015eff;}
+    35%{color: #0844ff;}
+    40%{color: #0322ff;}
+    45%{color: #0825ff;}
+    50% {color: #0608ff;}
+    55% {color: #0608ff;}
+    60%{color: #0825ff;}
+    65%{color: #0322ff;}
+    70%{color: #0844ff;}
+    75%{color: #015eff;}
+    80%{color: #066aff;}
+    85%{color: #049eff;}
+    90%{color: #04b0ff;}
+    95%{color: #04d0ff;}
+    100%{color: #03d5ff;}
+}
+.heid{
+    display: none;
+}
+/*模态框部分 css*/
+.media-body p{
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.modal-footer{
+    border-top: none;
+}
+
+.modal-header{
+    background: #f5f6f8;
+}
+.modal-content{
+    border-radius: 0;
+}
+input::placeholder{
+    text-align:center;
+}

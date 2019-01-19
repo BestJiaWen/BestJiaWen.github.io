@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>生日快乐</title>
+    <link rel="stylesheet" href="../static/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/CSS/main.css">
+    <script src="../static/JS/jquery-3.3.1.js"></script>
+    <script src="../static/JS/bootstrap.min.js"></script>
+    <script src="../static/JS/main.js"></script>
+
+
+</head>
+<body class="background_0">
+<audio src="../static/audio/秋仁%20-%20鱼玄机.mp3" autoplay="autoplay" loop="loop"></audio>
+
+<div id="app">
+    <div id="mymodal" class="modal fade bs-example-modal-sm">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content" id="modal-content">
+                <div class="modal-header" id="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <h5 class="modal-title">你好呀</h5>
+                </div>
+                <div class="media-body" id="media-body">
+                    <p id="body_info" class=""></p>
+                </div>
+                <div class="modal-footer" id="modal-footer">
+                    <button class="btn  btn-primary" onclick="headleClick()" data-dismiss="modal" id="btn_confirm">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mymodal-0" class="modal fade bs-example-modal-sm">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content" id="modal-content-0">
+                <div class="modal-header" id="modal-header-0">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <h5 class="modal-title">good luck</h5>
+                </div>
+                <div class="media-body" id="media-body-0">
+                    <p id="body_info-0" class=""></p>
+                </div>
+                <div class="modal-footer" id="modal-footer-0">
+                    <button class="btn  btn-primary" data-dismiss="modal" id="btn_confirm-0">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 time" style="margin-top: 20px;font-size: 50px">
+        <span id="nowTime" class="h1 list_text_0"></span>
+    </div>
+    <div class="col-md-12 time heid" id="title">
+        <h3 class="list_text_0">其实啊 我唯愿你能够被这世界温柔以待</h3>
+    </div>
+    <div class="time col-md-12">
+        <div class="col-md-4 col-md-push-4 cong" id="ul_idv">
+            <ul class="h4 list_text_0 list-unstyled" id="ullist">
+            </ul>
+        </div>
+
+    </div>
+    <div class="col-md-12" id="input" style="margin-top: 20px;margin-bottom: 20px">
+        <div class="col-md-4 col-md-push-4 heid" id="inp">
+            <input class="form-control" onblur="showText()" id="one" placeholder=" 写上你的问题吧,记得结尾加问号" type="text">
+        </div>
+    </div>
+    </div>
+</body>
+</html>
